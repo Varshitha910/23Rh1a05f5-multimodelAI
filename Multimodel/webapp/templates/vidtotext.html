@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <h1> Video to Text using Blip model and cv2</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="video">
+            <button type="submit">upload and get caption</button>
+        </form>
+         {% if caption %}
+         <h1> Generated caption</h1>
+         <p> {{caption}}</p>
+         {% endif %}
+    </body>
+</html>
